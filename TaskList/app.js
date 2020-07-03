@@ -24,10 +24,16 @@ addForm.addEventListener('submit', e => {
 
     e.preventDefault();
     
-    const todo = addForm.elements['add_todo_input'].value;
+    const todo = addForm.elements['add_todo_input'].value.trim();
     // const todo = addInputForm.value;
     
-    generateTemplate(todo)
+
+    //### disable blank inputs ###
+
+    if(todo.length){
+        generateTemplate(todo);
+        addForm.reset();
+    }
 });
 
 //
