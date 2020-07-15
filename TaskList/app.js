@@ -1,3 +1,5 @@
+
+//### adding todos
 const addForm = document.querySelector('.add');
 // const searchForm = document.querySelector('#search_input');
 // const addInputForm = document.querySelector('#add');
@@ -36,4 +38,12 @@ addForm.addEventListener('submit', e => {
     }
 });
 
-//
+//### deleting todos
+
+list.addEventListener('click', e => {
+
+    if(e.target.classList.contains('delete')){
+        e.target.parentElement.remove();
+    }
+
+});
