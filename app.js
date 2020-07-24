@@ -1,5 +1,5 @@
 
-//### adding todos
+//###################### ADDING ##############################
 const addForm = document.querySelector('.add');
 // const searchForm = document.querySelector('#search_input');
 // const addInputForm = document.querySelector('#add');
@@ -38,7 +38,7 @@ addForm.addEventListener('submit', e => {
     }
 });
 
-//### deleting todos
+//##################### DELETING ##########################
 
 list.addEventListener('click', e => {
 
@@ -47,3 +47,9 @@ list.addEventListener('click', e => {
     }
 
 });
+
+// ##################### FILTERING #########################
+
+//### grabbing input from form field @ form class="search"
+
+const search = document.querySelector('.search input');
